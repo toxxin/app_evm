@@ -20,6 +20,8 @@ from pymodbus.datastore import ModbusSequentialDataBlock
 from pymodbus.datastore import ModbusSlaveContext, ModbusServerContext
 
 from pymodbus.transaction import ModbusRtuFramer
+
+from dataset import *
 #---------------------------------------------------------------------------# 
 # configure the service logging
 #---------------------------------------------------------------------------# 
