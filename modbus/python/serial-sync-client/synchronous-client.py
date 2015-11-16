@@ -25,7 +25,7 @@ BASE_ADDR_MODULE_B = 0x10
 
 MAX_MODULE_B_COUNT = 16
 
-client = ModbusClient(method='ascii', port='/dev/pts/11', retries=1)
+client = ModbusClient(method='rtu', port='/dev/pts/11', retries=1)
 
 b_list = []
 def scan_modules():
