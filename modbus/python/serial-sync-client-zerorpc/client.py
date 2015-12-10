@@ -39,7 +39,7 @@ def scan_modules():
         if rr is not None and rr.function_code < 0x80:
             b_list.append(BASE_ADDR_MODULE_B + i)
     client.close()
-    return umn_list
+    return b_list
 
 class moduleRPC(object):
     def get_umns(self):
