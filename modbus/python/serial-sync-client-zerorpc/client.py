@@ -82,7 +82,7 @@ class moduleRPC(object):
         client.close()
         return 200
 
-umn = zerorpc.Server(RPC())
-umn.bind("tcp://0.0.0.0:4343")
-umn.run()
+b = zerorpc.Server(moduleRPC())
+b.bind("tcp://0.0.0.0:4343")
+b.run()
 
