@@ -42,7 +42,7 @@ def scan_modules():
     return b_list
 
 class moduleRPC(object):
-    def get_umns(self):
+    def get_modules(self):
         return scan_modules()
     def read_coils_b(self, addr):
         client.connect()
